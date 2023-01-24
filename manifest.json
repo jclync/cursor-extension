@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "cursor-changer",
+    "description": "Message passing example that changes the mouse cursor.",
+    "version": "1.0",
+    "action": {
+        "default_popup": "popup/popup.html",
+        "default_icon": "images/cny.png"
+    }, 
+    "permissions": [
+        "activeTab"
+    ],
+    "web_accessible_resources": [
+        {
+          "resources": [ "images/*.png" ],
+          "matches": [ "*://*/*" ]
+        }
+    ]
+}
