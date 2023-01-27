@@ -8,12 +8,24 @@
         "default_icon": "images/cny.png"
     }, 
     "permissions": [
-        "activeTab"
+        "activeTab",
+        "storage",
+        "tabs"
     ],
     "web_accessible_resources": [
         {
           "resources": [ "images/*.png" ],
           "matches": [ "*://*/*" ]
+        }
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*/*"
+            ],
+            "js": [
+                "content-scripts/page.js"
+            ]
         }
     ]
 }
